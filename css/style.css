@@ -1,0 +1,173 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'B612', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+*::selection{
+  background-color: none;
+}
+
+body {
+  background-color: rgb(2, 41, 2);
+  font-family: sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+.slider-input{
+  cursor: pointer;
+}
+
+.container{
+  z-index: 10;
+  display: none;
+  position: absolute;
+  width: 600px;
+  height: 690px;
+  top: 2vh;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -345px;
+}
+
+.end-game{
+  z-index: 10;
+  position: absolute;
+  display: none;
+  width: 1000px;
+  height: 315px;
+  top: 200px;
+  left: 50%;
+  top:50%;
+  margin-left: -500px;
+  margin-top: -157.5px;
+}
+
+.end-game h1{
+  font-size: 56pt;
+}
+
+h1, h2{
+  position: relative;
+  cursor: default;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 64pt;
+}
+
+h2{
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 28pt;
+}
+
+.slider{
+  position: relative;
+  width: 250px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.slider-label, .input-label{
+  margin-bottom: 8px;
+}
+
+.input{
+  z-index: 15;
+  margin: 10px;
+}
+
+.option-label{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.borders-right-left, .borders-up-down{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+}
+
+.controls{
+  position: relative;
+}
+
+.control{
+  width: 70px;
+  height: 70px;
+  cursor: default;
+  background-color: #fff;
+  line-height: 70px;
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  font-size: 16pt;
+  display: inline-block;
+}
+
+.control-w, .control-empty{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.control-a, .control-s, .control-d{
+  display:inline-block;
+}
+
+.control-empty{
+  color: transparent;
+  background-color: transparent;
+}
+
+.control-highlight{
+  -moz-box-shadow: inset 0 0 15px #000000;
+   -webkit-box-shadow: inset 0 0 15px #000000;
+   box-shadow: inset 0 0 15px #000000;
+}
+
+.start-button, .reset-button{
+  position: relative;
+  background-color: white;
+  width: 400px;
+  height: 65px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  cursor: pointer !important;
+}
+
+.button-text{
+  color: black;
+  line-height: 65px;
+  font-weight: 700;
+  font-size: 16pt;
+}
+
+
+.borders-right-left{
+    background: rgb(2, 41, 2);
+    background: linear-gradient(90deg, black 20%, rgb(2, 41, 2, 0) 40%, rgba(48,62,64,0) 60%, black 80%);
+}
+
+.borders-up-down{
+    background: rgb(51,51,51);
+    background: linear-gradient(0deg, black 4%, rgba(45,70,74,0) 27%, rgba(48,62,64,0) 73%, black 96%);
+}

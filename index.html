@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Labirynth</h1>
+
+      <div class="controls">
+        <h2>Sterowanie</h2>
+        <div>
+          <div class="control control-empty">a</div>
+          <div class="control control-empty">a</div>
+          <div class="control control-w">W</div>
+          <div class="control control-empty">a</div>
+          <div class="control control-r">R</div>
+        </div>
+        <div>
+          <div class="control control-a">A</div>
+          <div class="control control-s">S</div>
+          <div class="control control-d">D</div>
+        </div>
+      </div>
+
+      <h2>Opcje</h2>
+
+      <!-- <div class="slider slider-difficulty">
+        <p class="input-label">Wielkość labiryntu</p>
+        <input
+          class="slider-input difficulty"
+          type="range"
+          id="weight"
+          min="7"
+          value="0"
+          max="20"
+          step="1"
+          list="volsettings"
+        />
+        <datalist id="volsettings">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+        </datalist>
+        <input
+          class="slider-input difficulty"
+          type="range"
+          id="weight"
+          min="7"
+          value="0"
+          max="20"
+          step="1"
+          list="volsettings"
+        />
+        <datalist id="volsettings">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+        </datalist>
+      </div> -->
+
+      <div class="slider slider-speed">
+        <p class="slider-label">Prędkość animacji</p>
+        <input
+          class="slider-input speed"
+          type="range"
+          id="weight"
+          min="0"
+          value="0"
+          max="40"
+          step="20"
+          list="volsettings"
+        />
+        <datalist id="volsettings">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+        </datalist>
+        <div>
+          <div class="option-label">Brak</div>
+          <div class="option-label">Wolno</div>
+          <div class="option-label">Szybko</div>
+        </div>
+      </div>
+
+      <div class="start-button">
+        <p class="button-text">Start</p>
+      </div>
+    </div>
+
+    <div class="end-game">
+      <h1>Gratulacje, przeszedłeś labirynt!</h1>
+      <div class="reset-button">
+        <p class="button-text">Restart</p>
+      </div>
+    </div>
+
+    <div>
+      <canvas></canvas>
+    </div>
+    <div id="borders-sides" class="borders-right-left"></div>
+    <div id="borders-updown" class="borders-up-down"></div>
+    <script src="./js/Room.js"></script>
+    <script src="./js/Menu.js"></script>
+    <script src="./js/mazeGenerator.js"></script>
+    <script src="./js/maze.js"></script>
+  </body>
+</html>
